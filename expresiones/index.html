@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador de expresiones regulares</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="Header">
+        <h1>Calculador de expresiones regulares</h1>
+        <h3>Práctica de autómatas</h3>
+    </header>
+    <div id="almacen">
+    <nav id="Nav">
+        <h2>Tipo de búsqueda</h2>
+        <select id="tipoBusqueda">
+          <option value="">Seleccionar tipo de búsqueda</option>
+          <option value="g">Global</option>
+          <option value="i">Case Insensitive</option>
+          <option value="m">Multiline</option>
+      </select>
+      
+        <h2>Búsquedas realizadas</h2>
+        <ul id="busquedasRealizadas"></ul>
+    </nav>
+
+    <section id="Section">
+        <label for="expresionRegular">Ingrese la búsqueda:</label>
+        <input type="text" id="expresionRegular" name="expresionRegular">
+        <button id="validar">Buscar matches</button>
+    </section>
+    <section id="campoTexto">
+        <label for="textoPrueba">Ingrese el texto donde desea buscar:</label>
+        <textarea id="textoPrueba" name="textoPrueba" rows="4" cols="50"></textarea>
+    </section>
+
+    <article id="Article">
+        <label for="resultados">Matches obtenidos:</label>
+        <textarea id="resultados" name="resultados" rows="4" cols="50" readonly></textarea>
+        <p id="contadorMatches">Cantidad de coincidencias: 0</p>
+    </article>
+    <button id="limpiarCampos">Limpiar Campos</button>
+    </div>
+    <br><br>
+    <footer id="Footer">
+        <h4>Fendy Adalahi Roiz Cosio<h4>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>
